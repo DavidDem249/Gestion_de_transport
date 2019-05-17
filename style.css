@@ -1,0 +1,158 @@
+body{
+	font-family: 'source code pro', Calibri, serif;
+	padding: 0px;
+	margin: 0px;
+	background-color: orange;
+
+}
+nav > ul{
+	padding: 0px;
+	margin: 0px;
+}
+nav > ul::after{
+	content:"";
+	display:block;
+	clear: both;
+}
+nav{
+	width: 100%;
+	background-color: green;
+}
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+nav > ul > li > a{
+	padding: 20px 30px;
+	color: white;
+	font-size: 20px;  
+}
+
+nav > ul > li:hover a{
+	padding: 15px 30px 20px 30px ;
+}
+
+nav li{
+	list-style-type: none;
+}
+
+.sous-menu{
+	display: none;
+}
+nav a{
+	display: inline-block;
+	text-decoration: none; /* supprime le soulignement */
+}
+nav li:hover .sous-menu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	left: 0px;
+	padding: 0px;
+	z-index: 1000;
+}
+.sous-menu li{
+	border-bottom: 1px solid #ccc;
+}
+.sous-menu li a{
+	padding: 15px 30px;
+	font-size: 13px;
+	color: #222538;
+	width: 270px;
+}
+.menu-vehicule:hover{
+	border-top: 5px solid #e44d26;
+	background-color: RGBa(228, 77, 38, 0.15);
+}
+.menu-chauffeur:hover{
+	border-top: 5px solid #0070bb;
+	background-color: RGBa(000, 112, 192, 0.15);
+}
+.menu-versement:hover{
+	border-top: 5px solid #f1dc4f;
+	background-color: RGBa(241, 211, 79, 0.15);
+}
+.menu-depense:hover{
+	border-top: 5px solid #bbb
+	background-color: RGBa(112, 112, 100, 0.15);
+}
+.menu-panne:hover{
+	border-top: 5px solid #bbb;
+	background-color: RGBa(115, 112, 150, 0.15);
+}
+.menu-affecter:hover{
+	border-top: 5px solid #ddd;
+	background-color: RGBa(255, 202, 192, 0.15);
+}
+.menu-periode:hover{
+	border-top: 5px solid #f1d;
+	background-color: RGBa(233, 112, 102, 0.15);
+}
+.menu-contact:hover{
+	border-top: 5px solid #e44;
+	background-color: RGBa(138, 252, 292, 0.15);
+}
+.menu-vehicule .sous-menu{
+	background-color: RGB(230, 100, 40);
+}
+.menu-versement .sous-menu{
+	background-color: RGB(200, 100, 400);
+}
+.menu-chauffeur .sous-menu{
+	background-color: RGB(220, 260, 230);
+}
+.menu-depense .sous-menu{
+	background-color: RGB(160, 156, 40);
+}
+.menu-panne .sous-menu{
+	background-color: RGB(246, 106, 50);
+}
+.menu-periode .sous-menu{
+	background-color: RGB(255, 100, 40);
+}
+.menu-affecter .sous-menu{
+	background-color: RGB(225, 100, 40);
+}
+.menu-contact .sous-menu{
+	background-color: RGB(260, 160, 245);
+}
+.sous-menu li:hover a{
+	color:#EEE;
+	font-weight: bold;
+}
+/* Les couleurs lorsque le client pointe la souris la-dessus */ 
+.menu-vehicule .sous-menu li:hover{
+	background-color: RGB(210, 77, 60);
+}
+.menu-versement .sous-menu li:hover{
+	background-color: RGB(000, 125, 200);
+}
+.menu-pannes .sous-menu li:hover{
+	background-color: RGB(200, 165, 75);
+}
+.menu-depense .sous-menu li:hover{
+	background-color: RGB(169, 180, 250);
+}
+.menu-chauffeur .sous-menu li:hover{
+	background-color: RGB(164, 125, 230);
+}
+.menu-affecter .sous-menu li:hover{
+	background-color: RGB(244, 255, 145);
+}
+.menu-periode .sous-menu li:hover{
+	background-color: RGB(147, 245, 238);
+}
+.menu-contact .sous-menu li:hover{
+	background-color: RGB(148, 198, 200);
+}
+.titre{
+	margin-top: 0px;
+}
+div span{
+	margin-top: 0px;
+	padding-left: 50px;
+	font-size: 30px;
+}
+div h1{
+	font-size:30px;
+}
